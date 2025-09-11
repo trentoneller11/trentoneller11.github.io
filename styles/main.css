@@ -33,7 +33,7 @@ main h3{
 #list{
     line-height: 1.5em;
 }
-p.copyright{
+footer p.copyright{
     text-align: center;
     font-size: 80%;
 }
