@@ -66,6 +66,7 @@ aside{
     width: 20%;
     float: right;
     background-color: #ffebc6;
+    padding: 1em;
 }
 footer{
     clear: both;
@@ -77,4 +78,7 @@ footer p.copyright{
 }
 p.fixed{
     width: auto;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
 }
