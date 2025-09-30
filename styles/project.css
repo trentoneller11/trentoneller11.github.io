@@ -66,12 +66,11 @@ aside{
     width: 20%;
     float: right;
     background-color: #ffebc6;
-    padding: properly; 
+    padding: 1em; 
 }
 footer{
     clear: both;
     border-top: 2px maroon;
-    padding: 1em;
 }
 p.fixed{
     width: auto;
