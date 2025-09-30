@@ -1,4 +1,4 @@
-html{
+html {
      background-image: linear-gradient(to left, white 0%, #facd8a 100%);
 }
 body {
@@ -27,19 +27,19 @@ h1 {
     color: maroon;
     text-indent: 30px;
 }
-h2{
+h2 {
     font-size: 130%;
     color: #800000;
     text-indent: 30px;
 }
-img{
+img {
     float: left;
     margin-left: 2em; 
 }
-.shadow{
+.shadow {
     text-shadow: 2px 2px 2px rgb(128, 0, 0);
 }
-article{
+article {
     clear: left;
     width: 70%;
     float: left;
@@ -48,15 +48,15 @@ article{
     column-gap: 2em;
     margin-left: 2em; 
 }
-article h3{
+article h3 {
     column-span: all;
 }
-article img{
+article img {
     float: left;
     margin-right: 1em;
     margin-bottom: 1em;
 }
-article p::first-letter{
+article p::first-letter {
     font-size: 3em;
     font-weight: bold;
     font-style: italic;
