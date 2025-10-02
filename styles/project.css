@@ -14,7 +14,7 @@ body {
     background-image: url('/images/smile.jpeg');
     background-position: right;
     background-repeat: repeat-y;
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 a:focus, a:hover {
     font-style: italic;
@@ -26,6 +26,7 @@ h1 {
     font-size: 175%;
     color: maroon;
     text-indent: 30px;
+    border-bottom: 2px solid maroon;
 }
 h2 {
     font-size: 130%;
