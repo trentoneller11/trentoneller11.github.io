@@ -82,12 +82,11 @@ p.fixed{
     width: auto;
     position: fixed;
     Right:20px;
-    Top: 150px;
+    Top: 500px;
     background-color: lightgreen; 
     padding: 1em;
     border: 2px solid black;
     box-shadow: 2px 2px 2px 2px black; 
     font-weight: bold;  
     color: #333;  
-    font-size: 16px;
 }
