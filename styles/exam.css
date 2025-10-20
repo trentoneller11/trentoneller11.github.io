@@ -50,7 +50,7 @@ article {
     column-rule: 4px dotted blue;
     column-gap: 2em;
     margin-left: 2em; 
-    margin-top: 2em
+    margin-top: 2em;
 }
 
 article p::first-letter {
