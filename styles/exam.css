@@ -43,11 +43,6 @@ h2{
 #nav_menu ul li a.lastitem { border-right: none; }
 #nav_menu ul li a.current { color: yellow; }
 
-.nav-line {
-  border: 1px solid blue;
-  margin: 10px 20px;
-}
-
 article {
     clear: left;
     width: 75%;
