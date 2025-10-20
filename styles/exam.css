@@ -31,3 +31,7 @@ aside ul{
 aside ol{
     list-style-type: lower-alpha;
 }
+footer p.copyright{
+    text-align: center;
+    font-size: 80%;
+}
