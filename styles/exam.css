@@ -69,6 +69,9 @@ aside{
     float: right;
     background-color: lightblue;
     padding: 1em;
+    right:10px;
+    top: 100px;
+    border: 2px solid blue;
 }
 
 aside ol.outer{
