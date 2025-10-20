@@ -16,12 +16,12 @@ body {
     background-repeat: repeat-y;
     background-attachment: fixed;
 }
+
 h1 {
     font-size: 175%;
     color: blue;
-    margin-top: 1em;
-    display: block;
 }
+
 h2{
     font-size: 130%;
     color: blue;
