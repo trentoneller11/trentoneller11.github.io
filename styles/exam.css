@@ -50,6 +50,7 @@ article {
     column-rule: 4px dotted blue;
     column-gap: 2em;
     margin-left: 2em; 
+    margin-top: 2em
 }
 
 article p::first-letter {
@@ -70,7 +71,7 @@ aside{
     float: right;
     background-color: lightblue;
     padding: 1em;
-    right:10px;
+    right:0px;
     top: 150px;
     border: 2px solid blue;
 }
