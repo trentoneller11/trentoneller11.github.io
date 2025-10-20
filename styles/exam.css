@@ -20,12 +20,10 @@ body {
 h1 {
     font-size: 175%;
     color: blue;
-    text-indent: 30px;
 }
 h2{
     font-size: 130%;
     color: blue;
-    text-indent: 30px;
 }
 
 #nav_menu ul { list-style-type: none; }
@@ -48,7 +46,7 @@ article {
     width: 75%;
     float: left;
     column-count: 3;
-    column-rule: 2px dotted blue;
+    column-rule: 4px dotted blue;
     column-gap: 2em;
     margin-left: 2em; 
 }
@@ -84,10 +82,12 @@ aside ul{
 aside ol{
     list-style-type: lower-alpha;
 }
+
 footer{
     clear: both;
     border-top: 2px solid blue;
 }
+
 footer p.copyright{
     text-align: center;
     font-size: 80%;
