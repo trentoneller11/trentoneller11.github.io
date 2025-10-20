@@ -20,6 +20,8 @@ body {
 h1 {
     font-size: 175%;
     color: blue;
+    margin-top: 1em;
+    display: block;
 }
 h2{
     font-size: 130%;
@@ -50,7 +52,7 @@ article {
     column-rule: 4px dotted blue;
     column-gap: 2em;
     margin-left: 2em; 
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 article p::first-letter {
