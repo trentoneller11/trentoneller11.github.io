@@ -68,8 +68,6 @@ aside{
     float: right;
     background-color: lightblue;
     padding: 1em;
-    color: blue;
-    background-repeat: repeat-y;
 }
 
 aside ol.outer{
