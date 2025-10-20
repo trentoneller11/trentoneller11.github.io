@@ -25,7 +25,10 @@ h2{
     color: blue;
 }
 
-#nav_menu ul { list-style-type: none; }
+#nav_menu ul { 
+    list-style-type: none; 
+    border-bottom:2px solid blue;
+}
 #nav_menu ul li { float: left; }
 #nav_menu ul li a {
     text-align: center;
