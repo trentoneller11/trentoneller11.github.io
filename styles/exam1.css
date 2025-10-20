@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 95%;
+    background-color: white;
+    margin: 15px auto;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background-image: url('/images/smile.jpeg');
+    background-position: right;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+/* Headings */
+h1 {
+    font-size: 175%;
+    color: blue;
+    font-weight: bold;
+    margin-top: 20px;    /* space below the blue line */
+    margin-left: 40px;   /* pushes heading to the left */
+}
+
+h2 {
+    font-size: 130%;
+    color: blue;
+}
+
+/* Navigation Menu */
+#nav_menu {
+    text-align: center;          /* centers the nav */
+    margin-top: 10px;
+}
+
+/* UL is only as wide as buttons */
+#nav_menu ul {
+    list-style-type: none;
+    display: inline-block;
+    border-bottom: 3px solid blue;  /* ✅ thin blue line below buttons */
+    padding: 0;
+    margin: 0;
+}
+
+/* Each button */
+#nav_menu ul li {
+    display: inline-block;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+/* Last button has no right border */
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+/* Current page */
+#nav_menu ul li a.current {
+    color: yellow;
+}
+
+/* Hover effect */
+#nav_menu ul li a:hover {
+    background-color: darkblue;
+}
+
+/* Article example for later */
+article {
+    clear: left;
+    width: 75%;
+    float: left;
+    column-count: 3;
+    column-rule: 4px dotted blue;
+    column-gap: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+}
