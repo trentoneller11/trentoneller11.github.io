@@ -1,6 +1,7 @@
 
 header{
-     border-bottom: 2px solid blue;
+    border-bottom: 2px solid blue;
+    clear: both;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
