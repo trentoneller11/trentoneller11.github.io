@@ -70,7 +70,6 @@ aside{
     padding: 1em;
     color: blue;
     background-repeat: repeat-y;
-    background-attachment: fixed;
 }
 
 aside ol.outer{
