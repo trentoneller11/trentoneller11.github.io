@@ -18,10 +18,8 @@ body {
 }
 
 h1 {
-  display: block;
-  width: 100%;
-  margin: 0 0 1em 0;
-  text-align: left;
+    font-size: 175%;
+    color: blue;
 }
 
 h2{
