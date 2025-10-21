@@ -53,7 +53,9 @@ article {
     column-gap: 2em;
     margin-left: 2em; 
 }
-
+article h3 {
+    column-span: all;
+}
 article p::first-letter {
     font-size: 2em;
     font-weight: bold;
