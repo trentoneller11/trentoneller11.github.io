@@ -80,10 +80,6 @@ article p::first-letter {
     font-weight: bold;
     font-style: italic;
 }
-article p {
-    margin-top: 4em;
-}
-
 article img {
     float: left;
     margin-right: 1em;
