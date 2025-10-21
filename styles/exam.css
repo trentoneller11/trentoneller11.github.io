@@ -59,6 +59,7 @@ h2{
 hr {
     border: 0;
     border-top: 3px solid blue;
+    margin-top: 15px;
 }
 article {
     clear: left;
