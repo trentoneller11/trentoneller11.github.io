@@ -62,10 +62,6 @@ article p::first-letter {
     font-style: italic;
 }
 
-article p{
-    top: 50px;
-}
-
 article img {
     float: left;
     margin-right: 1em;
