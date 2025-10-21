@@ -1,6 +1,7 @@
 header{
      border-bottom: 3px solid blue;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -27,23 +28,42 @@ h2{
     color: blue;
 }
 
-#nav_menu ul { 
-    list-style-type: none; 
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-#nav_menu ul li { float: left; }
+
+#nav_menu ul li {
+    float: left;
+}
+
 #nav_menu ul li a {
     text-align: center;
     display: block;
     width: 175px;
-    padding: 1em 0; 
+    padding: 1em 0;
     text-decoration: none;
     background-color: blue;
     color: white;
     font-weight: bold;
-    border-right: 2px solid white;}
-#nav_menu ul li a.lastitem { border-right: none; }
-#nav_menu ul li a.current { color: yellow; }
+    border-right: 2px solid white;
+}
 
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+#nav_menu ul li a.current {
+    color: yellow;
+}
+
+hr {
+    border: 0;
+    border-top: 3px solid blue;
+    margin-top: 0;
+}
 article {
     clear: left;
     width: 75%;
@@ -66,6 +86,7 @@ article img {
     float: left;
     margin-right: 1em;
     margin-bottom: 1em;
+    max-width: 100px;
 }
 
 aside{
