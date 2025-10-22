@@ -9,14 +9,13 @@ body {
 }
 
 h1 {
-  line-height: 1.1;
-    letter-spacing: -0.02em;
-    --mobile-base-font-size: 16;
-    --mobile-font-size-scale: 1.15;
-    font: var(--font_7);
-    font-weight: 400;
-    color: rgb(245, 241, 239);
-    --inline-link-color: var(--primary-contrast-color);
+  font-family: 'Arial', sans-serif; 
+    font-size: 2.5em;
+  color: #ffffff; 
+  text-align: center; 
+  padding: 20px 0; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  line-height: 1.2; 
 }
 
 /*start of the navigation*/
