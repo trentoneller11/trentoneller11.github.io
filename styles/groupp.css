@@ -3,8 +3,6 @@ body {
   font-family: "Poppins", sans-serif;
   background: url('/images/Shoulder\ Massage.avif') no-repeat center/cover;
 }
-
-}
 .navbar {
   display: flex;
   align-items: center;
