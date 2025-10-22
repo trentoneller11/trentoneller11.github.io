@@ -3,6 +3,8 @@ body {
   font-family: "Poppins", sans-serif;
   background: url('/images/Shoulder\ Massage.avif') no-repeat center/cover;
   background-size: 75%;
+  width: 300;
+  height: 100;
 }
 /*start of the navigation*/
 img {
