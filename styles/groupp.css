@@ -1,16 +1,9 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background: url('/images/Shoulder\ Massage.avif') no-repeat center/cover;
 }
-.hero {
-  height: 100vh;
-  background: 
-    linear-gradient(to bottom, rgba(0,0,0,0.3), #f4f4f4 85%), 
-    url('/images/Shoulder\ Massage.avif') no-repeat center/cover;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+
 }
 .navbar {
   display: flex;
