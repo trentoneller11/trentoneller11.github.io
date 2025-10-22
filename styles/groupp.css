@@ -6,6 +6,7 @@ body {
 /*start of the navigation*/
 img {
     float: left;
+    margin-left: 10em;
 }
 .navbar {
   display: flex;
