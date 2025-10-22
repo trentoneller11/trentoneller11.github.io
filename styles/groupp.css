@@ -4,6 +4,10 @@ body {
   background: url('/images/Shoulder\ Massage.avif') no-repeat center/cover;
 }
 /*start of the navigation*/
+img {
+    float: left;
+    margin-left: 4em;
+}
 .navbar {
   display: flex;
   align-items: center;
