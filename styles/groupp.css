@@ -62,3 +62,19 @@ body {
   color: white;
   cursor: pointer;
 }
+
+.navbar a:hover {
+  color: black;
+}
+.navbar a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
