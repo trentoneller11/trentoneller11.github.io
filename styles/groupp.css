@@ -13,7 +13,7 @@ h1 {
     letter-spacing: -0.02em;
     --mobile-base-font-size: 16;
     --mobile-font-size-scale: 1.15;
-    font-family: "Playfair Display";
+    font: var(--font_7);
     font-weight: 400;
     color: rgb(245, 241, 239);
     --inline-link-color: var(--primary-contrast-color);
