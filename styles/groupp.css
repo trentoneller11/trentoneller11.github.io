@@ -1,10 +1,16 @@
+html{
+     background-image: linear-gradient(to bottom, rgb(0, 65, 34) 0%, white 100%);
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: url('/images/Shoulder\ Massage.avif') no-repeat center/cover;
   background-size: 75%;
 }
+
 /*start of the navigation*/
+
 img {
     float: left;
 }
