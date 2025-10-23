@@ -117,6 +117,7 @@ footer p.copyright{
   margin: 20px auto;
   border-radius: 5px;
   color: #ffffff; /* White text */
+  align-items: flex-start;
 }
 
 /* Map container */
