@@ -224,6 +224,7 @@ footer p.copyright {
 .details a {
   color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .details a:hover {
