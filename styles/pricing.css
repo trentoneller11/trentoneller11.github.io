@@ -113,7 +113,7 @@ footer p.copyright {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffcccb; /* Pink background like the image */
+    background-color: rgb(0, 65, 34); /* Pink background like the image */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -130,7 +130,7 @@ footer p.copyright {
 .pricing-note {
     text-align: center;
     margin-bottom: 20px;
-    color: #006522; /* Green text */
+    color: #ffffff; /* Green text */
 }
 
 .pricing-note p {
@@ -147,14 +147,14 @@ footer p.copyright {
 
 .pricing-section h2 {
     font-size: 1.5em;
-    color: #006522; /* Green text */
+    color: #ffffff; /* Green text */
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .pricing-section h3 {
     font-size: 1.2em;
-    color: #006522; /* Green text */
+    color: #ffffff; /* Green text */
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -172,33 +172,9 @@ footer p.copyright {
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
-    color: #006522; /* Green text */
+    color: #ffffff; 
 }
 
 .price-items li span {
     font-weight: bold;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .price-list-container {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .price-list-container h1 {
-        font-size: 2.5em;
-    }
-
-    .pricing-section h2 {
-        font-size: 1.3em;
-    }
-
-    .pricing-section h3 {
-        font-size: 1.1em;
-    }
-
-    .price-items li {
-        padding: 3px 0;
-    }
 }
