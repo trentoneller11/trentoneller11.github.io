@@ -104,25 +104,19 @@ img {
 }
 /*End of the navigation*/
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+footer p.copyright{
+    text-align: center;
+    font-size: 80%;
 }
 
-body {
-  font-family: Arial, sans-serif; /* Matches a clean, readable font */
-  line-height: 1.6;
-  background-color: #4a704a; /* Green background from the image */
-  color: #ffffff; /* White text */
-}
-
-/* Main container for location and hours */
 .location-hours {
   display: flex;
+  background-color: #4a704a; /* Green background from the image */
+  padding: 20px;
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
+  border-radius: 5px;
+  color: #ffffff; /* White text */
 }
 
 /* Map container */
@@ -131,15 +125,15 @@ body {
   margin-right: 20px;
 }
 
-.map-container iframe {
+.map-image {
   width: 100%;
-  height: 200px;
+  height: auto;
   border-radius: 5px;
 }
 
 /* Details section */
 .details {
-  flex: 2; /* Gives more space to details than map */
+  flex: 1;
 }
 
 .details h2 {
@@ -147,26 +141,16 @@ body {
   margin-bottom: 10px;
 }
 
-.info-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.address {
-  flex: 1;
-}
-
-.address p {
+.details p {
   margin-bottom: 10px;
 }
 
-.address a {
+.details a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.address a:hover {
+.details a:hover {
   text-decoration: underline;
 }
 
@@ -178,8 +162,6 @@ body {
 /* Hours list */
 .hours {
   list-style: none;
-  flex: 1;
-  margin-left: 20px; /* Space between address and hours */
 }
 
 .hours li {
@@ -192,14 +174,6 @@ body {
   font-weight: bold;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  font-size: 0.8em;
-  padding: 10px 0;
-  color: #ffffff;
-}
-
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .location-hours {
@@ -210,15 +184,6 @@ body {
   .map-container {
     margin-right: 0;
     margin-bottom: 15px;
-  }
-
-  .info-container {
-    flex-direction: column;
-  }
-
-  .hours {
-    margin-left: 0;
-    margin-top: 10px;
   }
 
   .details h2 {
