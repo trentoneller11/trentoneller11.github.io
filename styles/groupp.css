@@ -176,6 +176,10 @@ footer p.copyright{
   font-weight: bold;
 }
 
+element.style {
+    align-items: center;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .location-hours {
