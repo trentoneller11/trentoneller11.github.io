@@ -150,6 +150,7 @@ footer p.copyright {
     color: #ffffff; 
     margin-bottom: 10px;
     font-weight: bold;
+    border-bottom: 2px solid white
 }
 
 .pricing-section h3 {
@@ -157,6 +158,7 @@ footer p.copyright {
     color: #ffffff; 
     margin-bottom: 5px;
     font-weight: bold;
+    border-bottom: 2px solid white
 }
 
 .pricing-section.new-section h2 {
