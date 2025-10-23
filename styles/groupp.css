@@ -104,19 +104,25 @@ img {
 }
 /*End of the navigation*/
 
-footer p.copyright{
-    text-align: center;
-    font-size: 80%;
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif; /* Matches a clean, readable font */
+  line-height: 1.6;
+  background-color: #4a704a; /* Green background from the image */
+  color: #ffffff; /* White text */
+}
+
+/* Main container for location and hours */
 .location-hours {
   display: flex;
-  background-color: #4a704a; /* Green background from the image */
-  padding: 20px;
   max-width: 800px;
   margin: 20px auto;
-  border-radius: 5px;
-  color: #ffffff; /* White text */
+  padding: 20px;
 }
 
 /* Map container */
@@ -125,15 +131,15 @@ footer p.copyright{
   margin-right: 20px;
 }
 
-.map-image {
+.map-container iframe {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 5px;
 }
 
 /* Details section */
 .details {
-  flex: 1;
+  flex: 2; /* Gives more space to details than map */
 }
 
 .details h2 {
@@ -141,16 +147,26 @@ footer p.copyright{
   margin-bottom: 10px;
 }
 
-.details p {
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.address {
+  flex: 1;
+}
+
+.address p {
   margin-bottom: 10px;
 }
 
-.details a {
+.address a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.details a:hover {
+.address a:hover {
   text-decoration: underline;
 }
 
@@ -162,6 +178,8 @@ footer p.copyright{
 /* Hours list */
 .hours {
   list-style: none;
+  flex: 1;
+  margin-left: 20px; /* Space between address and hours */
 }
 
 .hours li {
@@ -174,6 +192,14 @@ footer p.copyright{
   font-weight: bold;
 }
 
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .location-hours {
@@ -184,6 +210,15 @@ footer p.copyright{
   .map-container {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .hours {
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .details h2 {
