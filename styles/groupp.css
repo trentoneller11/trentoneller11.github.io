@@ -118,6 +118,7 @@ footer p.copyright{
   border-radius: 5px;
   color: #ffffff; /* White text */
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 /* Map container */
