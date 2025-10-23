@@ -167,7 +167,8 @@ footer p.copyright{
 .hours li {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  padding: 3px 0;
+  width: 40%;
 }
 
 .hours li span {
