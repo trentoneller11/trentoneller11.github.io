@@ -174,12 +174,6 @@ footer p.copyright{
   font-weight: bold;
 }
 
-.info-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .location-hours {
