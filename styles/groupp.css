@@ -165,6 +165,12 @@ footer p.copyright{
   flex: 1;
 }
 
+.hours p {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
 .hours li {
   display: flex;
   justify-content: space-between;
@@ -178,25 +184,4 @@ footer p.copyright{
 
 element.style {
     align-items: center;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .location-hours {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .map-container {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-
-  .details h2 {
-    font-size: 1.2em;
-  }
-
-  .hours li {
-    padding: 3px 0;
-  }
 }
