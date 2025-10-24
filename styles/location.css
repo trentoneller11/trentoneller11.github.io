@@ -273,3 +273,87 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* ============================================================= */
+/*  HAMBURGER → DROPDOWN MENU (pure CSS, no JS)                 */
+/* ============================================================= */
+
+/* hide the checkbox */
+.nav-toggle { display:none; }
+
+/* hamburger label – visible only on mobile */
+.hamburger {
+    display:none;               /* hidden on desktop */
+    font-size:1.8rem;
+    color:white;
+    cursor:pointer;
+    position:relative;
+    z-index:1000;
+}
+.hamburger .fa-times { display:none; }   /* close icon hidden by default */
+
+/* ----- mobile dropdown ----- */
+.mobile-dropdown {
+    position:absolute;
+    top:100%;                     /* directly under the header */
+    left:0;
+    right:0;
+    background:rgba(0,65,34,0.98);
+    max-height:0;                 /* collapsed */
+    overflow:hidden;
+    transition:max-height .35s ease;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0 20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+.mobile-dropdown a {
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    padding:14px 0;
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+.mobile-dropdown .mobile-btn {
+    margin:20px 0 10px;
+    width:80%;
+    text-align:center;
+}
+
+/* ----- when checkbox is checked → open dropdown ----- */
+#nav-toggle:checked ~ .mobile-dropdown {
+    max-height:500px;          /* enough for all items */
+}
+
+/* show X when open */
+#nav-toggle:checked ~ .hamburger .fa-bars  { display:none; }
+#nav-toggle:checked ~ .hamburger .fa-times { display:block; }
+
+/* ============================================================= */
+/*  RESPONSIVE BREAKPOINT (≤992px = mobile)                     */
+/* ============================================================= */
+@media (max-width: 992px) {
+    .navbar { padding:12px 15px; position:relative; }
+
+    .logo img { width:140px; height:auto; }
+
+    /* show hamburger */
+    .hamburger { display:block; }
+
+    /* hide desktop nav & desktop button */
+    .nav-links,
+    .nav-actions.desktop-only { display:none; }
+
+    /* dropdown appears under the header */
+    .mobile-dropdown { display:flex; }
+}
+
+/* optional – smaller screens */
+@media (max-width: 480px) {
+    .mobile-dropdown a { font-size:1rem; padding:12px 0; }
+}
