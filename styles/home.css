@@ -353,8 +353,9 @@ element.style {
 .text-content {
     flex: 2;
     min-width: 300px;
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 1.8;
+    font-family: fangsong;
 }
 
 .text-content p {
