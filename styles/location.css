@@ -170,7 +170,6 @@ h1 {
 
 /* ====================== LOCATION & HOURS ====================== */
 .location-hours {
-    display: flex;
     flex-wrap: wrap;
     gap: 40px;
     background-color: #4a704a;
