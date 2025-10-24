@@ -189,11 +189,3 @@ footer p.copyright{
 element.style {
     align-items: center;
 }
-
-
-/*footer */
-
-footer p.copyright{
-    text-align: center;
-    font-size: 80%;
-}
