@@ -108,7 +108,7 @@ footer p.copyright {
     font-size: 80%;
 }
 
-/* Price List Styling */
+/* Price List Styling start*/
 .price-list-container {
     max-width: 600px;
     margin: 20px auto;
@@ -181,7 +181,7 @@ footer p.copyright {
 }
 /* Price List Styling end */
 
-/* location List Styling end */
+/* location List Styling start */
 .location-hours {
   display: flex;
   background-color: #4a704a; 
@@ -264,6 +264,10 @@ element.style {
     align-items: center;
 }
 
+/* location List Styling end */
+
+/* gallary Start */
+
 .gallery {
     max-width: 1200px;
     margin: 40px auto;
@@ -297,3 +301,5 @@ element.style {
     transform: scale(1.04);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* gallary end */
