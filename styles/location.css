@@ -25,13 +25,14 @@ img {
     float: left;
 }
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 60px;
-  width: 60%;
-  margin: 0 auto;
-  padding: 0 10px;
+  max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .logo h2 {
