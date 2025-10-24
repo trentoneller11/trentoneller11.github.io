@@ -345,3 +345,159 @@ footer {
     .price-list-container { padding: 20px; }
     .price-list-container h1 { font-size: 1.8rem; }
 }
+
+/* ====================== MOBILE NAVIGATION ====================== */
+
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Mobile menu hidden by default */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: rgba(0, 65, 34, 0.98);
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu .mobile-btn {
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    padding: 12px;
+}
+
+/* Close icon when menu is open */
+.hamburger.active .fa-bars {
+    display: none;
+}
+
+.hamburger.active .fa-times {
+    display: block;
+}
+
+.hamburger .fa-times {
+    display: none;
+}
+
+/* Overlay when menu is open */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ====================== MEDIA QUERIES ====================== */
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide desktop nav and button */
+    .nav-links,
+    .nav-actions.desktop-only {
+        display: none;
+    }
+
+    /* Adjust services section */
+    .services-intro {
+        max-width: 90%;
+        margin-left: 5%;
+        padding: 40px 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-stack {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .circle-img {
+        width: 120px;
+        height: 120px;
+        margin-left: 0;
+    }
+
+    .text-content {
+        font-size: 2.5rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-content {
+        font-size: 2rem;
+    }
+
+    .circle-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .gallery h1 {
+        font-size: 2.2rem;
+    }
+}
