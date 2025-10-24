@@ -103,10 +103,6 @@ img {
 }
 /* End of the navigation */
 
-footer p.copyright {
-    text-align: center;
-    font-size: 80%;
-}
 
 /* Price List Styling start*/
 .price-list-container {
@@ -193,7 +189,6 @@ footer p.copyright {
   justify-content: space-between;
 }
 
-
 .map-container {
   flex: 1;
   margin-right: 20px;
@@ -235,7 +230,6 @@ footer p.copyright {
   display: block;
   margin-top: 5px;
 }
-
 
 .hours {
   list-style: none;
@@ -303,3 +297,8 @@ element.style {
 }
 
 /* gallary end */
+
+footer p.copyright {
+    text-align: center;
+    font-size: 80%;
+}
