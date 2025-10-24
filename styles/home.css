@@ -353,10 +353,10 @@ element.style {
 .text-content {
     flex: 2;
     min-width: 300px;
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1.8;
     font-family: fangsong;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .text-content p {
