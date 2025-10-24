@@ -24,13 +24,14 @@ img {
     float: left;
 }
 .navbar {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
-    width: 60%;
-    margin: 0 auto;
-    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .logo h2 {
@@ -103,12 +104,8 @@ img {
 }
 /* End of the navigation */
 
-footer p.copyright {
-    text-align: center;
-    font-size: 80%;
-}
 
-/* Price List Styling */
+/* Price List Styling start*/
 .price-list-container {
     max-width: 600px;
     margin: 20px auto;
@@ -181,7 +178,7 @@ footer p.copyright {
 }
 /* Price List Styling end */
 
-/* location List Styling end */
+/* location List Styling start */
 .location-hours {
   display: flex;
   background-color: #4a704a; 
@@ -192,7 +189,6 @@ footer p.copyright {
   align-items: flex-start;
   justify-content: space-between;
 }
-
 
 .map-container {
   flex: 1;
@@ -236,7 +232,6 @@ footer p.copyright {
   margin-top: 5px;
 }
 
-
 .hours {
   list-style: none;
   padding-left: 0;
@@ -264,8 +259,12 @@ element.style {
     align-items: center;
 }
 
+/* location List Styling end */
+
+/* gallary Start */
+
 .gallery {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -296,4 +295,11 @@ element.style {
 .grid img:hover {
     transform: scale(1.04);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* gallary end */
+
+footer p.copyright {
+    text-align: center;
+    font-size: 80%;
 }
