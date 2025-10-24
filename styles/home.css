@@ -304,6 +304,8 @@ element.style {
     padding: 60px 20px;
     font-family: 'Poppins', sans-serif;
     color: white;
+    max-width: 60%;
+    margin-left: 20%;
 }
 
 .container {
