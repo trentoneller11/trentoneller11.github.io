@@ -1,304 +1,214 @@
+/* ====================== RESET & BASE ====================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
-    background-image: linear-gradient(to bottom, rgb(0, 65, 34) 0%, white 100%);
+    background: linear-gradient(to bottom, rgb(0, 65, 34) 0%, white 100%);
     background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5em;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    line-height: 1.2;
-}
-
-/* Start of the navigation */
-img {
-    float: left;
-}
+/* ====================== NAVBAR ====================== */
 .navbar {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box;
+    position: relative;
+    z-index: 1000;
 }
 
-.logo h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.3rem;
-    line-height: 1.3;
-    margin: 0;
-}
-
-.logo span {
-    font-size: 0.95rem;
-    font-weight: 400;
+.logo img {
+    height: 70px;
+    width: auto;
 }
 
 .nav-links {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
+    transition: right 0.4s ease;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 0.95rem;
     letter-spacing: 0.05em;
+    position: relative;
 }
 
-.nav-actions {
-    display: flex;
-    align-items: center;
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .btn {
     border: 2px solid white;
     padding: 10px 18px;
     border-radius: 25px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .btn:hover {
     background: white;
-    color: black;
+    color: #003300;
 }
 
-.nav-actions i {
-    font-size: 1.2rem;
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
     color: white;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 
-.navbar a:hover {
-    color: black;
+/* ====================== MOBILE NAVBAR ====================== */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 50, 0, 0.97);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: right 0.4s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.4rem;
+        margin: 1.2rem 0;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-actions .btn {
+        display: none;
+    }
 }
 
-.navbar a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width 0.3s;
-}
-
-.navbar a:hover::after {
-    width: 100%;
-}
-/* End of the navigation */
-
-
-/* Price List Styling start*/
-.price-list-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #4a704a; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px
-}
-
-.price-list-container h1 {
-    font-family: "Poppins", sans-serif; 
-    font-size: 3em;
-    color: #ffffff; 
-    text-align: center;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
-
-.pricing-note {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff; 
-}
-
-.pricing-note p {
-    margin: 5px 0;
-}
-
-.pricing-note em {
-    font-size: 0.9em;
-}
-
-.pricing-section {
-    margin-bottom: 20px;
-}
-
-.pricing-section h2 {
-    font-size: 1.5em;
-    color: #ffffff; 
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid white
-}
-
-.pricing-section h3 {
-    font-size: 1.5em;
-    color: #ffffff; 
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.pricing-section.new-section h3 {
-    color: #ff4500; 
-}
-
-.price-items {
-    list-style: none;
-    padding: 0;
-}
-
-.price-items li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    color: #ffffff; 
-}
-
-.price-items li span {
-    font-weight: bold;
-}
-/* Price List Styling end */
-
-/* location List Styling start */
-.location-hours {
-  display: flex;
-  background-color: #4a704a; 
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 0px;
-  color: #ffffff; 
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.map-container {
-  flex: 1;
-  margin-right: 20px;
-  margin-top: 40px;
-  margin-left: 500px;
-}
-
-.map-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-
-.details {
-  flex: 1;
-}
-
-.details h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.details p {
-  margin-bottom: 10px;
-}
-
-.details a {
-  color: #ff0000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.details a:hover {
-  text-decoration: underline;
-}
-
-.directions {
-  display: block;
-  margin-top: 5px;
-}
-
-.hours {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  width: 30%;
-}
-
-.hours li {
-  display: flex;
-  justify-content: space-between;
-  padding: 3px 0;
-  width: 100%; 
-}
-
-.address p a.directions {
-  display: block;
-  margin-bottom: 10px; 
-}
-
-.hours li span {
-  font-weight: bold;
-}
-
-element.style {
-    align-items: center;
-}
-
-/* location List Styling end */
-
-/* gallary Start */
-
+/* ====================== GALLERY ====================== */
 .gallery {
+    flex: 1;
     max-width: 90%;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 60px auto;
+    padding: 0 15px;
+    text-align: center;
 }
 
 .gallery h1 {
-    text-align: center;
-    color: #fff;
+    color: white;
     font-size: 2.8rem;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    font-weight: 700;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
+    padding: 0;
+    list-style: none;
 }
 
 .grid img {
     width: 100%;
-    height: 100%;
+    height: 220px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .grid img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
 
-/* gallary end */
-
-footer p.copyright {
+/* ====================== FOOTER ====================== */
+footer {
     text-align: center;
-    font-size: 80%;
+    padding: 25px;
+    color: white;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.1);
+    margin-top: auto;
+}
+
+/* ====================== MOBILE ADJUSTMENTS ====================== */
+@media (max-width: 480px) {
+    .navbar { padding: 15px; }
+    .logo img { height: 55px; }
+
+    .gallery {
+        margin: 40px auto;
+        padding: 0 10px;
+    }
+
+    .gallery h1 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .grid img {
+        height: 180px;
+        border-radius: 12px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
