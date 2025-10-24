@@ -38,6 +38,7 @@ body {
     display: flex;
     gap: 2rem;
     transition: all 0.3s ease;
+    margin-left: 5%;
 }
 
 .nav-links a {
