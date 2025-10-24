@@ -257,11 +257,19 @@ body {
     margin-bottom: 20px;
 }
 
-.pricing-section h2, .pricing-section h3 {
+.pricing-section h2 {
     font-size: 1.4rem;
     margin: 15px 0 10px;
     border-bottom: 2px solid rgba(255,255,255,0.3);
     padding-bottom: 5px;
+}
+
+pricing-section h3{
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+    color: red;
 }
 
 .price-items li {
