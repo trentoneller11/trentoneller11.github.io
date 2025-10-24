@@ -361,10 +361,6 @@ element.style {
     margin-bottom: 20px;
 }
 
-.text-content p:last-child {
-    margin-bottom: 0;
-}
-
 footer p.copyright {
     text-align: center;
     font-size: 80%;
