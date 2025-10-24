@@ -306,6 +306,7 @@ element.style {
     color: white;
     max-width: 60%;
     margin-left: 20%;
+    border-radius: 10px;
 }
 
 .container {
