@@ -1,25 +1,28 @@
-/* -------------------------------------------------
-   1. GLOBAL RESET & TYPOGRAPHY
-------------------------------------------------- */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 html {
     background-image: linear-gradient(to bottom, rgb(0, 65, 34) 0%, white 100%);
     background-repeat: no-repeat;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
-/* -------------------------------------------------
-   2. NAVBAR
-------------------------------------------------- */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+/* Start of the navigation */
+img {
+    float: left;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -27,10 +30,19 @@ body {
     padding: 20px 60px;
     width: 60%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
-.logo img {
-    height: 80px;
+.logo h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.logo span {
+    font-size: 0.95rem;
+    font-weight: 400;
 }
 
 .nav-links {
@@ -44,6 +56,11 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
 }
 
 .btn {
@@ -62,9 +79,191 @@ body {
     color: black;
 }
 
-/* -------------------------------------------------
-   3. GALLERY GRID
-------------------------------------------------- */
+.nav-actions i {
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+/* End of the navigation */
+
+footer p.copyright {
+    text-align: center;
+    font-size: 80%;
+}
+
+/* Price List Styling */
+.price-list-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #4a704a; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px
+}
+
+.price-list-container h1 {
+    font-family: "Poppins", sans-serif; 
+    font-size: 3em;
+    color: #ffffff; 
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.pricing-note {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; 
+}
+
+.pricing-note p {
+    margin: 5px 0;
+}
+
+.pricing-note em {
+    font-size: 0.9em;
+}
+
+.pricing-section {
+    margin-bottom: 20px;
+}
+
+.pricing-section h2 {
+    font-size: 1.5em;
+    color: #ffffff; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid white
+}
+
+.pricing-section h3 {
+    font-size: 1.5em;
+    color: #ffffff; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pricing-section.new-section h3 {
+    color: #ff4500; 
+}
+
+.price-items {
+    list-style: none;
+    padding: 0;
+}
+
+.price-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    color: #ffffff; 
+}
+
+.price-items li span {
+    font-weight: bold;
+}
+/* Price List Styling end */
+
+/* location List Styling end */
+.location-hours {
+  display: flex;
+  background-color: #4a704a; 
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 0px;
+  color: #ffffff; 
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+.map-container {
+  flex: 1;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-left: 500px;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.details p {
+  margin-bottom: 10px;
+}
+
+.details a {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.details a:hover {
+  text-decoration: underline;
+}
+
+.directions {
+  display: block;
+  margin-top: 5px;
+}
+
+
+.hours {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  width: 30%;
+}
+
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+  width: 100%; 
+}
+
+.address p a.directions {
+  display: block;
+  margin-bottom: 10px; 
+}
+
+.hours li span {
+  font-weight: bold;
+}
+
+element.style {
+    align-items: center;
+}
+
 .gallery {
     max-width: 1200px;
     margin: 40px auto;
@@ -97,153 +296,4 @@ body {
 .grid img:hover {
     transform: scale(1.04);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* -------------------------------------------------
-   4. PRICE LIST STYLING
-------------------------------------------------- */
-.price-list-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #4a704a;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.price-list-container h1 {
-    font-size: 3em;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.pricing-note {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.pricing-note p {
-    margin: 5px 0;
-}
-
-.pricing-note em {
-    font-size: 0.9em;
-}
-
-.pricing-section {
-    margin-bottom: 20px;
-}
-
-.pricing-section h2 {
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid white;
-}
-
-.pricing-section h3 {
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.pricing-section.new-section h3 {
-    color: #ff4500;
-}
-
-.price-items {
-    list-style: none;
-    padding: 0;
-}
-
-.price-items li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    color: #ffffff;
-}
-
-.price-items li span {
-    font-weight: bold;
-}
-
-/* -------------------------------------------------
-   5. LOCATION & HOURS
-------------------------------------------------- */
-.location-hours {
-    display: flex;
-    background-color: #4a704a;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 0;
-    color: #ffffff;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.map-container {
-    flex: 1;
-    margin-right: 20px;
-    margin-top: 40px;
-    margin-left: 500px;
-}
-
-.details {
-    flex: 1;
-}
-
-.details h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.details a {
-    color: #ff0000;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.details a:hover {
-    text-decoration: underline;
-}
-
-.directions {
-    display: block;
-    margin-top: 5px;
-}
-
-.hours {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    width: 30%;
-}
-
-.hours li {
-    display: flex;
-    justify-content: space-between;
-    padding: 3px 0;
-    width: 100%;
-}
-
-.hours li span {
-    font-weight: bold;
-}
-
-/* -------------------------------------------------
-   6. FOOTER
-------------------------------------------------- */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #000000;
-}
-
-.copyright {
-    font-size: 80%;
 }
