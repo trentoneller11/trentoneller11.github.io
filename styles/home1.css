@@ -1,0 +1,331 @@
+/* ====================== RESET & BASE ====================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(to bottom, rgb(0, 65, 34) 0%, white 100%);
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ====================== NAVBAR ====================== */
+.navbar {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    border: 2px solid white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: #003300;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ====================== MOBILE NAVBAR ====================== */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 50, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-actions .btn {
+        display: none;
+    }
+}
+
+/* ====================== SERVICES INTRO ====================== */
+.services-intro {
+    background-color: #4a704a;
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 90%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 260px;
+    align-items: center;
+}
+
+.circle-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #6a946a;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.circle-img:hover {
+    transform: scale(1.1);
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 2;
+    min-width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.text-content p {
+    margin-bottom: 18px;
+    font-style: italic;
+}
+
+.text-content .btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Mobile: Stack */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .circle-img {
+        width: 130px;
+        height: 130px;
+    }
+    .text-content {
+        font-size: 1rem;
+    }
+}
+
+/* ====================== GALLERY ====================== */
+.gallery {
+    max-width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.gallery h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ====================== PRICE LIST ====================== */
+.price-list-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #4a704a;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.price-list-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.pricing-section h2, .pricing-section h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+}
+
+.price-items li {
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+/* ====================== LOCATION & HOURS ====================== */
+.location-hours {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4a704a;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    color: white;
+    max-width: 90%;
+    gap: 20px;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    margin: 0;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hours {
+    width: 100%;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.hours li {
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.95rem;
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* ====================== MOBILE FIXES ====================== */
+@media (max-width: 480px) {
+    .navbar { padding: 15px; }
+    .logo img { height: 55px; }
+    .services-intro { padding: 30px 15px; }
+    .gallery h1 { font-size: 2rem; }
+    .price-list-container { padding: 20px; }
+    .price-list-container h1 { font-size: 1.8rem; }
+}
