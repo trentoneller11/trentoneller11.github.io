@@ -205,14 +205,6 @@ footer {
     margin-top: auto;
 }
 
-/* ====================== FOOTER ====================== */
-footer {
-    text-align: center;
-    padding: 25px;
-    color: white;
-    font-size: 0.9rem;
-}
-
 /* ====================== MOBILE FIXES ====================== */
 @media (max-width: 480px) {
     .navbar { padding: 15px; }
