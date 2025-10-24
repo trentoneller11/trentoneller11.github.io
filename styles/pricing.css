@@ -103,12 +103,7 @@ img {
 }
 /* End of the navigation */
 
-footer p.copyright {
-    text-align: center;
-    font-size: 80%;
-}
-
-/* Price List Styling */
+/* Price List Styling start */
 .price-list-container {
     max-width: 600px;
     margin: 20px auto;
@@ -181,82 +176,7 @@ footer p.copyright {
 }
 /* Price List Styling end */
 
-/* location List Styling end */
-.location-hours {
-  display: flex;
-  background-color: #4a704a; 
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 0px;
-  color: #ffffff; 
-  align-items: flex-start;
-  justify-content: space-between;
+footer p.copyright {
+    text-align: center;
+    font-size: 80%;
 }
-
-
-.map-container {
-  flex: 1;
-  margin-right: 20px;
-  margin-top: 40px;
-  margin-left: 500px;
-}
-
-.map-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-
-.details {
-  flex: 1;
-}
-
-.details h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.details p {
-  margin-bottom: 10px;
-}
-
-.details a {
-  color: #ff0000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.details a:hover {
-  text-decoration: underline;
-}
-
-.directions {
-  display: block;
-  margin-top: 5px;
-}
-
-
-.hours {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  width: 30%;
-}
-
-.hours li {
-  display: flex;
-  justify-content: space-between;
-  padding: 3px 0;
-  width: 100%; 
-}
-
-.address p a.directions {
-  display: block;
-  margin-bottom: 10px; 
-}
-
-.hours li span {
-  font-weight: bold;
-}
-

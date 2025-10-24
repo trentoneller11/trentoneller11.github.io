@@ -111,12 +111,12 @@ footer p.copyright{
 
 .location-hours {
   display: flex;
-  background-color: #4a704a; /* Green background from the image */
+  background-color: #4a704a;  
   padding: 20px;
   max-width: 1050px;
   margin: 20px auto;
   border-radius: 5px;
-  color: #ffffff; /* White text */
+  color: #ffffff; 
   align-items: flex-start;
   justify-content: space-between;
 }
