@@ -307,6 +307,7 @@ element.style {
     max-width: 60%;
     margin-left: 20%;
     border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .container {
