@@ -1,183 +1,243 @@
+/* ====================== RESET & BASE ====================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
-    background-image: linear-gradient(to bottom, rgb(0, 65, 34) 0%, white 100%);
+    background: linear-gradient(to bottom, rgb(0, 65, 34) 0%, white 100%);
     background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    font-family: 'Arial', sans-serif;
-    font-style: italic;
-    font-size: 2.5em;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    line-height: 1.2;
-}
-
-/* Start of the navigation */
-img {
-    float: left;
-}
+/* ====================== NAVBAR ====================== */
 .navbar {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box;
+    position: relative;
+    z-index: 1000;
 }
 
-.logo h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.3rem;
-    line-height: 1.3;
-    margin: 0;
-}
-
-.logo span {
-    font-size: 0.95rem;
-    font-weight: 400;
+.logo img {
+    height: 70px;
+    width: auto;
 }
 
 .nav-links {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
+    transition: right 0.4s ease;
 }
 
 .nav-links a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 0.95rem;
     letter-spacing: 0.05em;
+    position: relative;
 }
 
-.nav-actions {
-    display: flex;
-    align-items: center;
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .btn {
     border: 2px solid white;
     padding: 10px 18px;
     border-radius: 25px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .btn:hover {
     background: white;
-    color: black;
+    color: #003300;
 }
 
-.nav-actions i {
-    font-size: 1.2rem;
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
     color: white;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 
-.navbar a:hover {
-    color: black;
+/* ====================== MOBILE NAVBAR ====================== */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 50, 0, 0.97);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: right 0.4s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.4rem;
+        margin: 1.2rem 0;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-actions .btn {
+        display: none;
+    }
 }
 
-.navbar a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width 0.3s;
-}
-
-.navbar a:hover::after {
-    width: 100%;
-}
-/* End of the navigation */
-
-/* Price List Styling start */
+/* ====================== PRICE LIST ====================== */
 .price-list-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #4a704a; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px
+    flex: 1;
+    max-width: 700px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #4a704a;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
 }
 
 .price-list-container h1 {
-    font-family: "Poppins", sans-serif; 
-    font-size: 3em;
-    color: #ffffff; 
-    text-align: center;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 .pricing-note {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff; 
-}
-
-.pricing-note p {
-    margin: 5px 0;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .pricing-note em {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 8px;
+    opacity: 0.9;
 }
 
 .pricing-section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
-.pricing-section h2 {
-    font-size: 1.5em;
-    color: #ffffff; 
-    margin-bottom: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid white
-}
-
+.pricing-section h2,
 .pricing-section h3 {
-    font-size: 1.5em;
-    color: #ffffff; 
-    margin-bottom: 5px;
-    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 15px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
 }
 
 .pricing-section.new-section h3 {
-    color: #ff4500; 
+    color: #ff4500;
+    font-weight: 700;
 }
 
 .price-items {
     list-style: none;
-    padding: 0;
 }
 
 .price-items li {
     display: flex;
     justify-content: space-between;
-    padding: 5px 0;
-    color: #ffffff; 
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+}
+
+.price-items li:last-child {
+    border-bottom: none;
 }
 
 .price-items li span {
-    font-weight: bold;
+    font-weight: 700;
+    color: #e6f7e6;
 }
-/* Price List Styling end */
 
-footer p.copyright {
+/* ====================== FOOTER ====================== */
+footer {
     text-align: center;
-    font-size: 80%;
+    padding: 25px;
+    color: white;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.1);
+}
+
+/* ====================== MOBILE ADJUSTMENTS ====================== */
+@media (max-width: 480px) {
+    .navbar { padding: 15px; }
+    .logo img { height: 55px; }
+
+    .price-list-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .price-list-container h1 {
+        font-size: 2rem;
+    }
+
+    .pricing-section h2,
+    .pricing-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .price-items li {
+        font-size: 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .price-items li span {
+        font-size: 1.1rem;
+    }
 }
