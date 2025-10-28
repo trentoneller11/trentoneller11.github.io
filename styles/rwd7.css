@@ -76,7 +76,7 @@ transform: rotate(-405deg);
 /*----end of menu*/
 section a{
     text-decoration: none;
-    color: white:
+    color: white;
 }
 
 .menu a:hover, a.current{
