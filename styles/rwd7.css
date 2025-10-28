@@ -108,7 +108,8 @@ footer{
     font-size: 6em;
 }
 
-.menu-button-container {
+@media only screen and (max-width: 768px) {
+    .menu-button-container {
 display: flex;
 }
 .menu {
@@ -145,4 +146,5 @@ background-color: #222;
 }
 .menu > li:not(:last-child) {
 border-bottom: 1px solid #444;
+}
 }
