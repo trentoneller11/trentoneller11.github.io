@@ -35,6 +35,62 @@ table.second thead tr:first-child{
     border-bottom: 2px solid purple;
 }
 
+table.third {
+    margin-top: 40px;
+}
+
+/* Cells */
+table.third th,
+table.third td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+/* Category numbers – top-aligned */
+table.third td.category {
+    vertical-align: top;
+    font-weight: bold;
+    width: 15%;
+}
+
+/* ---- Header ---- */
+/* Title row (TABLE 3: ...) */
+table.third thead tr:first-child {
+    border-top: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+    background-color: #fff2e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Column headers (Category | Job | Salary) */
+table.third thead tr:last-child {
+    border-bottom: 1px solid #999;
+    background-color: #f9f9f9;
+}
+
+/* ---- Body ---- */
+table.third tbody tr:first-child {
+    border-top: 1px solid #999;
+}
+
+/* Dashed separators after each category group */
+table.third tbody tr:nth-child(3),   /* after category 1 */
+table.third tbody tr:nth-child(4) { /* after category 2 (single row) */
+    border-bottom: 1px dashed #ccc;
+}
+
+/* Final bottom border */
+table.third tbody tr:last-child {
+    border-bottom: 2px solid orangered;
+}
+
+/* Hover (nice touch) */
+table.third tbody tr:hover {
+    background-color: #fff8f0;
+}
+
 @media only screen and (max-width: 425px) {
     th, td {
         display: block;
