@@ -36,59 +36,74 @@ table.second thead tr:first-child{
 }
 
 table.third {
-    margin-top: 40px;
+    width: 100%;
+    max-width: 520px;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-/* Cells */
-table.third th,
-table.third td {
-    padding: 10px 12px;
+/* === Title Row (Green Bar) === */
+table.third .title-row {
+    background-color: #27ae60;     /* Green */
+    border-top: 3px solid #27ae60;
+    border-bottom: 3px solid #27ae60;
+}
+
+table.third .title-row th {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+/* === Header Row (Category | Job | Salary) === */
+table.third .header-row {
+    background-color: #f8f8f8;
+}
+
+table.third .header-row th {
+    padding: 10px 16px;
+    font-weight: bold;
+    color: #333;
     text-align: left;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Category numbers – top-aligned */
+/* === Body Cells === */
+table.third td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+/* Last row – no bottom border */
+table.third tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* === Category Column === */
 table.third td.category {
     vertical-align: top;
     font-weight: bold;
-    width: 15%;
+    color: #27ae60;                /* Match green */
+    width: 70px;
+    padding-right: 20px;
+    text-align: left;
 }
 
-/* ---- Header ---- */
-/* Title row (TABLE 3: ...) */
-table.third thead tr:first-child {
-    border-top: 2px solid orangered;
-    border-bottom: 2px solid orangered;
-    background-color: #fff2e6;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Column headers (Category | Job | Salary) */
-table.third thead tr:last-child {
-    border-bottom: 1px solid #999;
-    background-color: #f9f9f9;
-}
-
-/* ---- Body ---- */
-table.third tbody tr:first-child {
-    border-top: 1px solid #999;
-}
-
-/* Dashed separators after each category group */
-table.third tbody tr:nth-child(3),   /* after category 1 */
-table.third tbody tr:nth-child(4) { /* after category 2 (single row) */
-    border-bottom: 1px dashed #ccc;
-}
-
-/* Final bottom border */
-table.third tbody tr:last-child {
-    border-bottom: 2px solid orangered;
-}
-
-/* Hover (nice touch) */
-table.third tbody tr:hover {
-    background-color: #fff8f0;
+/* === Remove side borders – only horizontal lines === */
+table.third th,
+table.third td {
+    border-left: none;
+    border-right: none;
 }
 
 @media only screen and (max-width: 425px) {
