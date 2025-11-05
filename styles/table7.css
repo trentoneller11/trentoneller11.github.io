@@ -62,14 +62,13 @@ table.third caption span{
 /* header row in green strip */
 table.third thead th{
   background: #7CDE7A;                  /* same green as caption for continuity */
-  border: 2px solid #2e8b57;
+  border: 2px solid #f48024;
   padding: .5rem .75rem;
   text-align: left;
 }
 
 /* body cells */
 table.third td{
-  border: 2px solid #2e8b57;
   padding: .55rem .75rem;
   vertical-align: middle;
 }
