@@ -70,6 +70,7 @@ table.third th {
 table.third td{
   padding: .55rem .75rem;
   vertical-align: middle;
+  border: none; 
 }
 
 /* optional: make Category column a bit narrower like the mockup */
