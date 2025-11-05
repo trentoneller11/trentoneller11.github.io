@@ -51,7 +51,9 @@ table.third caption {
   font-weight: 800;
   padding: 0.4em;
   border: 3px solid #f48024;          /* Same orange border */
-  border-bottom: none;                /* Fuses with header */
+  border-bottom: none; 
+  border-right: none;
+  border-left: none;               /* Fuses with header */
 }
 
 /* Header row (Category / Job / Salary) */
