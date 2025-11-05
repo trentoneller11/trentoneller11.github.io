@@ -36,8 +36,7 @@ table.second thead tr:first-child{
 }
 
 table.third{
-  border-collapse: collapse;
-  border: 2px solid #f48024;          /* darker green outer border */
+  border-collapse: collapse;          /* darker green outer border */
   min-width: 340px;
   position: relative;                  /* for the orange line pseudo-element */
   margin-bottom: 2.25rem;
@@ -81,16 +80,6 @@ table.third tbody tr:nth-child(odd){
   background: #f8fff8;
 }
 
-/* thick orange line at the bottom (screenshot accent) */
-table.third::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -10px;
-  height: 4px;
-  background: #f48024;                  /* orange */
-}
 
 /* mobile: stack like your existing rule */
 @media only screen and (max-width: 425px){
