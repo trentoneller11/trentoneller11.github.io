@@ -40,6 +40,7 @@ table.third{
   min-width: 340px;
   position: relative;                  /* for the orange line pseudo-element */
   margin-bottom: 2.25rem;
+  border-bottom: solid orange;
 }
 
 /* caption styled like the screenshot's green title bar */
