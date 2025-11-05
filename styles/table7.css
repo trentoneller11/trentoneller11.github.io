@@ -35,7 +35,73 @@ table.second thead tr:first-child{
     border-bottom: 2px solid purple;
 }
 
+table.third{
+  border-collapse: collapse;
+  border: 2px solid #2e8b57;          /* darker green outer border */
+  min-width: 340px;
+  position: relative;                  /* for the orange line pseudo-element */
+  margin-bottom: 2.25rem;
+}
 
+/* caption styled like the screenshot's green title bar */
+table.third caption{
+  caption-side: top;
+  background: #7CDE7A;                 /* light green */
+  color: #111;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .5rem .75rem;
+  border: 2px solid #2e8b57;           /* same as table border */
+  border-bottom: none;                  /* fuse with table border */
+  letter-spacing: .3px;
+}
+table.third caption span{
+  font-weight: 800;                     /* “TABLE 3:” a bit bolder */
+}
+
+/* header row in green strip */
+table.third thead th{
+  background: #7CDE7A;                  /* same green as caption for continuity */
+  border: 2px solid #2e8b57;
+  padding: .5rem .75rem;
+  text-align: left;
+}
+
+/* body cells */
+table.third td{
+  border: 2px solid #2e8b57;
+  padding: .55rem .75rem;
+  vertical-align: middle;
+}
+
+/* optional: make Category column a bit narrower like the mockup */
+table.third .col-cat{ width: 8ch; }
+
+/* subtle alternating rows (like the screenshot’s clean look) */
+table.third tbody tr:nth-child(odd){
+  background: #f8fff8;
+}
+
+/* thick orange line at the bottom (screenshot accent) */
+table.third::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 4px;
+  background: #f48024;                  /* orange */
+}
+
+/* mobile: stack like your existing rule */
+@media only screen and (max-width: 425px){
+  table.third th, table.third td{ display:block; }
+  table.third thead{ display:none; }
+  table.third td[rowspan]{                /* undo rowspans on small screens */
+    display:block;
+    width: 100%;
+  }
+}
 
 
 @media only screen and (max-width: 425px) {
