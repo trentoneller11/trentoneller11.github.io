@@ -51,7 +51,7 @@ table.third caption{
   font-weight: 700;
   text-transform: uppercase;
   padding: .5rem .75rem;
-  border: 2px solid #2e8b57;           /* same as table border */
+  border: 2px solid #f48024;           /* same as table border */
   border-bottom: none;                  /* fuse with table border */
   letter-spacing: .3px;
 }
