@@ -50,8 +50,7 @@ table.third caption{
   font-weight: 700;
   text-transform: uppercase;
   padding: .5rem .75rem;
-  border: 2px solid #f48024;           /* same as table border */
-  border-bottom: none;                  /* fuse with table border */
+  border: 2px solid #f48024;           /* same as table border */                 /* fuse with table border */
   letter-spacing: .3px;
 }
 table.third caption span{
