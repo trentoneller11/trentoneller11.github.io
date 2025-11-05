@@ -44,26 +44,26 @@ table.third{
 }
 
 /* caption styled like the screenshot's green title bar */
-table.third caption{
+table.third caption {
   caption-side: top;
-  background: #7CDE7A;                 /* light green */
+  background-color: #7CDE7A;          /* Light green */
   color: #111;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: .5rem .75rem;
-  border: 2px solid #f48024;           /* same as table border */                 /* fuse with table border */
-  letter-spacing: .3px;
-}
-table.third caption span{
-  font-weight: 800;                     /* “TABLE 3:” a bit bolder */
+  font-weight: 800;
+  padding: 0.4em;
+  border: 3px solid #f48024;          /* Same orange border */
+  border-bottom: none;                /* Fuses with header */
 }
 
-/* header row in green strip */
-table.third thead th{
-  background: #7CDE7A;                  /* same green as caption for continuity */
-  border: 2px solid #f48024;
-  padding: .5rem .75rem;
-  text-align: left;
+/* Header row (Category / Job / Salary) */
+table.third th {
+  background-color: #7CDE7A;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em 1em;
+  border-top: 3px solid #f48024;      /* Only top + bottom orange */
+  border-bottom: 3px solid #f48024;
+  border-left: none;                  /* Remove vertical borders */
+  border-right: none;                 /* Remove vertical borders */
 }
 
 /* body cells */
