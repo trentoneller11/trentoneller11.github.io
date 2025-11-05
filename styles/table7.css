@@ -37,7 +37,7 @@ table.second thead tr:first-child{
 
 table.third{
   border-collapse: collapse;
-  border: 2px solid #2e8b57;          /* darker green outer border */
+  border: 2px solid #f48024;          /* darker green outer border */
   min-width: 340px;
   position: relative;                  /* for the orange line pseudo-element */
   margin-bottom: 2.25rem;
