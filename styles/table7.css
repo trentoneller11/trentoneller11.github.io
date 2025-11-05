@@ -35,76 +35,8 @@ table.second thead tr:first-child{
     border-bottom: 2px solid purple;
 }
 
-table.third {
-    width: 100%;
-    max-width: 520px;
-    margin: 40px auto;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    background: white;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
 
-/* === Title Row (Green Bar) === */
-table.third .title-row {
-    background-color: #27ae60;     /* Green */
-    border-top: 3px solid #27ae60;
-    border-bottom: 3px solid #27ae60;
-}
 
-table.third .title-row th {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding: 12px 16px;
-    font-size: 15px;
-}
-
-/* === Header Row (Category | Job | Salary) === */
-table.third .header-row {
-    background-color: #f8f8f8;
-}
-
-table.third .header-row th {
-    padding: 10px 16px;
-    font-weight: bold;
-    color: #333;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-/* === Body Cells === */
-table.third td {
-    padding: 10px 16px;
-    border-bottom: 1px solid #eee;
-    text-align: left;
-}
-
-/* Last row – no bottom border */
-table.third tbody tr:last-child td {
-    border-bottom: none;
-}
-
-/* === Category Column === */
-table.third td.category {
-    vertical-align: top;
-    font-weight: bold;
-    color: #27ae60;                /* Match green */
-    width: 70px;
-    padding-right: 20px;
-    text-align: left;
-}
-
-/* === Remove side borders – only horizontal lines === */
-table.third th,
-table.third td {
-    border-left: none;
-    border-right: none;
-}
 
 @media only screen and (max-width: 425px) {
     th, td {
