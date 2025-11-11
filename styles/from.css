@@ -49,7 +49,8 @@ textarea {
 .submit-row {
   display: flex;
   justify-content: center;  /* centers buttons horizontally */
-  gap: 1rem;                /* adds space between buttons */        /* optional top spacing */
+  gap: 1rem; 
+  margin-bottom: 10px;               /* adds space between buttons */        /* optional top spacing */
 }
 
 button {
