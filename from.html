@@ -65,28 +65,36 @@
         </fieldset>
         <fieldset>
             <legend>How Did You Hear About Us?</legend>
-            <div class="choices">
-                <label><input type="checkbox" name="referral[]" value="web"> Website/Google</label>
-                <label><input type="checkbox" name="referral[]" value="friend"> Friend/Family</label>
-                <label><input type="checkbox" name="referral[]" value="social"> Social Media</label>
-                <label><input type="checkbox" name="referral[]" value="ad"> Advertisement</label>
-                <label>
-                    <input type="checkbox" name="referral[]" value="other"> Other:
-                    <input type="text" name="referral_other" id="referral_other" placeholder="Please specify">
-                </label>
-            </div>
+                <ul class="hear-list">
+                    <li>
+                    <label for="hear_search">Search engine</label>
+                    <input type="checkbox" id="hear_search" name="referral[]" value="search">
+                    </li>
+                    <li>
+                    <label for="hear_social">Social media</label>
+                    <input type="checkbox" id="hear_social" name="referral[]" value="social">
+                    </li>
+                    <li>
+                    <label for="hear_email">Email</label>
+                    <input type="checkbox" id="hear_email" name="referral[]" value="email">
+                    </li>
+                    <li>
+                    <label for="hear_friend">Friend or colleague</label>
+                    <input type="checkbox" id="hear_friend" name="referral[]" value="friend">
+                    </li>
+                </ul>
         </fieldset>
         <fieldset>
             <legend>Comments</legend>
-            <label for="comments" class="block">Tell us anything else:</label>
-            <textarea name="comments" id="comments" rows="5" cols="40" maxlength="1000" placeholder="Your comments..."></textarea>
+            <textarea id="comments" name="comments" rows="5" placeholder="If you have any comments, please enter them here."></textarea>
         </fieldset>
         <fieldset>
             <legend>Submit Your Membership</legend>
-            <button type="submit">Submit Membership</button>
-            <button type="reset">Reset Form</button>
+            <div class="submit-row">
+            <button type="submit" class="btn primary">Submit</button>
+            <button type="reset" class="btn muted">Reset Fields</button>
+            </div>
         </fieldset>
     </form>
-
 </body>
 </html>
