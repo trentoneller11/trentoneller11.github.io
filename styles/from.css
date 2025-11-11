@@ -41,3 +41,7 @@ textarea {
 #buttons input {
     width: 10em;
 }
+
+.hear-list {
+  list-style-type: none; 
+}
