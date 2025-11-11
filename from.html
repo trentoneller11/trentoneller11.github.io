@@ -45,6 +45,51 @@
             title="Must be 999-999-999 format"
             autocomplete="on"><br>
      </fieldset>
+     <fieldset>
+            <legend>Membership Information</legend>
+
+            <label for="membership_type">Membership Type:</label>
+            <select name="membership_type" id="membership_type" required>
+                <option value="" selected disabled>-- Select Type --</option>
+                <option value="junior">Junior</option>
+                <option value="regular">Regular</option>
+                <option value="charter">Charter</option>
+            </select><br>
+
+            <label for="start_date">Starting Date:</label>
+            <input type="date" name="start_date" id="start_date" required><br>
+
+            <label for="tickets">Tickets:</label>
+            <input type="number" name="tickets" id="tickets" min="1" max="4" value="2" required>
+            <small>(Min 1, Max 4, Default 2)</small>
+        </fieldset>
+        <fieldset>
+            <legend>How Did You Hear About Us?</legend>
+            <div class="choices">
+                <label><input type="checkbox" name="referral[]" value="web"> Website/Google</label>
+                <label><input type="checkbox" name="referral[]" value="friend"> Friend/Family</label>
+                <label><input type="checkbox" name="referral[]" value="social"> Social Media</label>
+                <label><input type="checkbox" name="referral[]" value="ad"> Advertisement</label>
+                <label>
+                    <input type="checkbox" name="referral[]" value="other"> Other:
+                    <input type="text" name="referral_other" id="referral_other" placeholder="Please specify">
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Comments</legend>
+            <label for="comments" class="block">Tell us anything else:</label>
+            <textarea name="comments" id="comments" rows="5" cols="40" maxlength="1000" placeholder="Your comments..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Submit Your Membership</legend>
+            <label class="block">
+                <input type="checkbox" name="agree" required>
+                I confirm the information provided is accurate.
+            </label>
+            <button type="submit">Submit Membership</button>
+            <button type="reset">Reset Form</button>
+        </fieldset>
     </form>
 
 </body>
