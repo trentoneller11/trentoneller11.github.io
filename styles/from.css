@@ -45,3 +45,26 @@ textarea {
 .hear-list {
   list-style-type: none; 
 }
+
+.submit-row {
+  display: flex;
+  justify-content: center;  /* centers buttons horizontally */
+  gap: 1rem;                /* adds space between buttons */
+  margin-top: 10px;         /* optional top spacing */
+}
+
+button {
+  padding: 8px 18px;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+button.primary {
+  background-color: white;
+}
+
+button.muted {
+  background-color: #d9d9d9;
+}
