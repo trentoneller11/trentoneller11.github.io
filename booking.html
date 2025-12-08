@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment : Montra Massage</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+ 
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Pricing</a>
+            <a href="#">Gallery</a>
+            <a href="#">Location</a>
+            <a class="active" href="booking.html">Booking</a>
+        </div>
+    </nav>
+ 
+    <div class="logo">
+            <img src="images/montra-logo.avif" alt="Montra Thai Massage logo" width="200" height="100">
+    </div>
+    <!-- BOOKING FORM -->
+    <section class="booking-section">
+        <h2>Book Your Appointment</h2>
+ 
+        <form class="booking-form">
+ 
+            <label>Full Name</label>
+            <input type="text" placeholder="Your name" required>
+ 
+            <label>Email Address</label>
+            <input type="email" placeholder="you@example.com" required>
+ 
+            <label>Phone Number</label>
+            <input type="text" placeholder="(555) 555-5555" required>
+ 
+            <label>Select Service</label>
+            <select required>
+                <option disabled selected>Select a massage</option>
+                <option>Regular Massage – 40 mins ($60)</option>
+                <option>Thai/Swedish/Combo/Deep Tissue – 1 hr ($80)</option>
+                <option>Thai/Swedish/Combo/Deep Tissue – 75 mins ($100)</option>
+                <option>Thai/Swedish/Combo/Deep Tissue – 90 mins ($120)</option>
+                <option>Thai/Swedish/Combo/Deep Tissue – 2 hr ($150)</option>
+                <option>Couples Massage – 1 hr ($150)</option>
+                 <option>Couples Massage – 75 min ($200)</option>
+                <option>Couples Massage – 2 hr ($240)</option>
+            </select>
+ 
+            <label>Select Date</label>
+            <input type="date" required>
+ 
+            <label>Select Time</label>
+            <input type="time" required>
+ 
+            <button type="submit" class="submit-btn">Submit Appointment</button>
+ 
+        </form>
+    </section>
+ 
+   <footer>
+        <p class="copyright">© Montra Thai Massage, Houston, Texas</p>
+</footer>
+ 
+</body>
+</html>
