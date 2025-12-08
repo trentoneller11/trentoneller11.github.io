@@ -11,21 +11,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
- 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="location.html">Location</a>
-            <a class="active" href="booking.html">Booking</a>
-        </div>
-    </nav>
- 
-    <div class="logo">
+  <header class="navbar">
+        <div class="logo">
             <img src="images/montra-logo.avif" alt="Montra Thai Massage logo" width="200" height="100">
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+    <label for="nav-toggle" class="hamburger">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+    </label>
+    
+    <nav class="nav-links" id="nav-links">
+        <a href="home.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="location.html">Location</a>
+    </nav>
+
+    <div class="nav-actions desktop-only">
+        <a href="booking.html" class="btn">Book an Appointment</a>
     </div>
+    
+    <div class="mobile-dropdown">
+        <a href="home.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="location.html">Location</a>
+        <a href="booking.html" class="btn mobile-btn">Book an Appointment</a>
+    </div>
+</header>
+
     <!-- BOOKING FORM -->
     <section class="booking-section">
         <h2>Book Your Appointment</h2>
