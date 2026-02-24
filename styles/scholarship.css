@@ -546,3 +546,9 @@ input:focus, textarea:focus{
   grid-template-columns: 1.2fr 0.8fr; /* keep your two-column look */
   align-items: start;
 }
+
+#contact .footer-side {
+  text-align: center;
+  margin-top: 1rem;
+  color: rgba(255,255,255,0.7);
+}
