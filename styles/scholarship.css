@@ -189,28 +189,27 @@ a{ color: inherit; text-decoration: none; }
 .hero-content{
   position: relative;
   min-height: 86vh;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* top + bottom */
+  justify-content: space-between;
   align-items: center;
-
   padding: 4.5rem 0 3rem;
   text-align: center;
+  z-index: 2; /* keeps text above images */
 }
-
 
 .hero-top{ max-width: 900px; }
 .hero-bottom{ width: 100%; display: grid; justify-items: center; gap: 1rem; }
 
-.hero-title{
-  margin: 1rem 0 0.75rem;
-  font-family: "Playfair Display", Georgia, serif;
-  font-weight: 600;
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  line-height: 1.05;
-  max-width: 18ch;
+.hero-text-bg{
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
+  background: rgba(0,0,0,0.60);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(6px);
 }
+
 .hero-subtitle{
   margin: 0.5rem auto 0;
   max-width: 70ch;
