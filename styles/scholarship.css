@@ -68,7 +68,10 @@ a{ color: inherit; text-decoration: none; }
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(12px);
-  background: rgba(5,7,6,0.62);
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(42,122,85,0.18), transparent 60%),
+    radial-gradient(900px 500px at 80% 10%, rgba(42,122,85,0.10), transparent 55%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
   border-bottom: 1px solid var(--line);
 }
 .header-inner{
@@ -643,16 +646,10 @@ input:focus, textarea:focus{
   content: "";
   position: absolute;
   inset: 0;
-  background: #050706;              /* solid */
+ background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(42,122,85,0.18), transparent 60%),
+    radial-gradient(900px 500px at 80% 10%, rgba(42,122,85,0.10), transparent 55%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));              /* solid */
   border-bottom: 1px solid var(--line);
   z-index: -1;
-}
-
-.site-header{
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #050706;              /* solid */
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: none;            /* optional, but recommended */
 }
