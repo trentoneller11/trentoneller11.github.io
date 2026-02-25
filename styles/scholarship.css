@@ -632,17 +632,17 @@ input:focus, textarea:focus{
 
 .hero-text-bg{
   position: relative;
-  display: inline-block;
-  padding: 0.6rem 1rem;   /* small, won’t push layout much */
-  border-radius: 12px;
+  width: 100vw;                 /* full screen width */
+  margin-left: calc(50% - 50vw); /* breaks out of container */
+  padding: 1.5rem 2rem;
+  text-align: center;
 }
 
-/* THIS is the actual background layer */
+/* background layer */
 .hero-text-bg::before{
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.45); /* transparent black */
-  border-radius: inherit;
-  z-index: -1; /* sits behind text */
+  z-index: -1;
 }
