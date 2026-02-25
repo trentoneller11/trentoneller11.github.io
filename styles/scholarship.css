@@ -615,9 +615,6 @@ input:focus, textarea:focus{
   max-width: 900px;
 }
 
-.hero-title{
-  max-width: 24ch;   /* wider since it’s centered */
-}
 
 .hero-subtitle{
   max-width: 70ch;
