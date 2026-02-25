@@ -643,6 +643,8 @@ input:focus, textarea:focus{
   content: "";
   position: absolute;
   inset: 0;
-   background: linear-gradient(135deg, rgba(42,122,85,0.55), rgba(15,42,28,0.95));
+  background: rgba(5,7,6,0.62);   /* SAME as nav */
+  backdrop-filter: blur(12px);    /* match the blur */
+  border-bottom: 1px solid var(--line); /* optional: same divider feel */
   z-index: -1;
 }
