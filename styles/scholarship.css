@@ -222,11 +222,9 @@ a{ color: inherit; text-decoration: none; }
   max-width: 18ch;
 }
 .hero-subtitle{
-  margin: 0 0 1.6rem;
-  max-width: 58ch;
-  color: rgba(255,255,255,0.78);
-  font-size: 1.05rem;
-  line-height: 1.6;
+  margin: 0.5rem auto 0;
+  max-width: 70ch;
+  text-align: center;
 }
 
 /* Center subtitle nicely */
@@ -237,13 +235,12 @@ a{ color: inherit; text-decoration: none; }
 
 /* Dark background behind title + subtitle */
 .hero-text-bg{
-  display: inline-block;
-  padding: 0.9rem 1.1rem;
+  display: inline-block;          /* shrink-wrap to the text width */
+  padding: 1rem 1.25rem;
   border-radius: 18px;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.55);   /* black but see-through */
   border: 1px solid rgba(255,255,255,0.12);
-  backdrop-filter: blur(6px);
-  max-width: min(980px, 92vw); /* prevents it from stretching too wide */
+  backdrop-filter: blur(6px);     /* optional: makes it look nicer */
 }
 
 /* Optional: give the title extra pop */
