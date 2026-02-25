@@ -643,6 +643,6 @@ input:focus, textarea:focus{
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45); /* transparent black */
+   background: linear-gradient(135deg, rgba(42,122,85,0.55), rgba(15,42,28,0.95));
   z-index: -1;
 }
