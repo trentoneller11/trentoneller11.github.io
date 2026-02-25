@@ -156,9 +156,26 @@ a{ color: inherit; text-decoration: none; }
 .hero-media{
   position:absolute;
   inset:0;
-  background:
-    linear-gradient(180deg, rgba(5,7,6,0.2), rgba(5,7,6,0.85)),
-    url("/images/nash.JPG") center/130% no-repeat;
+
+  background-image:
+    linear-gradient(180deg, rgba(5,7,6,0.20), rgba(5,7,6,0.85)),
+    url("../images/boat.JPG"),     /* LEFT */
+    url("../images/nash.JPG"),     /* CENTER (change if different) */
+    url("../images/fishing.JPG");  /* RIGHT */
+
+  background-position:
+    center,
+    left center,
+    center center,
+    right center;
+
+  background-size:
+    cover,        /* gradient */
+    33.33% 100%,  /* left panel */
+    33.34% 100%,  /* center panel */
+    33.33% 100%;  /* right panel */
+
+  background-repeat: no-repeat;
 }
 .hero-overlay{
   position:absolute;
