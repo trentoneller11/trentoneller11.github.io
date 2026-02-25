@@ -159,9 +159,9 @@ a{ color: inherit; text-decoration: none; }
 
   background-image:
     linear-gradient(180deg, rgba(5,7,6,0.20), rgba(5,7,6,0.85)),
-    url("../images/boat.JPG"),     /* LEFT */
-    url("../images/nash.JPG"),     /* CENTER (change if different) */
-    url("../images/fishing.JPG");  /* RIGHT */
+    url("/images/boat.jpeg"),     /* LEFT */
+    url("/images/nash.JPG"),     /* CENTER (change if different) */
+    url("/images/fishing.jpeg");  /* RIGHT */
 
   background-position:
     center,
