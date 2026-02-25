@@ -552,3 +552,19 @@ input:focus, textarea:focus{
   margin-top: 1rem;
   color: rgba(255,255,255,0.7);
 }
+
+/* Outer resume card should match Essay width automatically */
+#resume .resume-outer { width: 100%; }
+
+/* Make inner columns look like subtle panels (optional) */
+#resume .resume-panel{
+  padding: 1rem;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.14);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Small screen: stack columns */
+@media (max-width: 920px){
+  #resume .grid-2{ grid-template-columns: 1fr; }
+}
