@@ -629,3 +629,20 @@ input:focus, textarea:focus{
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
+
+.hero-text-bg{
+  position: relative;
+  display: inline-block;
+  padding: 0.6rem 1rem;   /* small, won’t push layout much */
+  border-radius: 12px;
+}
+
+/* THIS is the actual background layer */
+.hero-text-bg::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45); /* transparent black */
+  border-radius: inherit;
+  z-index: -1; /* sits behind text */
+}
