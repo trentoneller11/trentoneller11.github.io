@@ -643,8 +643,16 @@ input:focus, textarea:focus{
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(5,7,6,0.62);   /* SAME as nav */
-  backdrop-filter: blur(12px);    /* match the blur */
-  border-bottom: 1px solid var(--line); /* optional: same divider feel */
+  background: #050706;              /* solid */
+  border-bottom: 1px solid var(--line);
   z-index: -1;
+}
+
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #050706;              /* solid */
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: none;            /* optional, but recommended */
 }
