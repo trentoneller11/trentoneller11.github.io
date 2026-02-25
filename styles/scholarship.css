@@ -188,21 +188,15 @@ a{ color: inherit; text-decoration: none; }
 }
 .hero-content{
   position: relative;
-
-  /* take full hero height so we can push stuff to top/bottom */
   min-height: 86vh;
 
-  /* grid: top area + bottom area */
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  align-content: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* top + bottom */
+  align-items: center;
 
-  /* spacing */
- 
-
-  /* center everything */
+  padding: 4.5rem 0 3rem;
   text-align: center;
-  justify-items: center;
 }
 .hero-kicker{
   display:inline-block;
