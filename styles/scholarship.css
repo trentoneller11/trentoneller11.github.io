@@ -678,3 +678,5 @@ a{ color: inherit; text-decoration:none; }
 .container-wide{
   width: min(1400px, calc(100% - 2rem));
 }
+
+.gallery-item{ min-height: 260px; }
