@@ -565,3 +565,61 @@ a{ color: inherit; text-decoration:none; }
   .gallery{ grid-template-columns: 1fr; }
   .two-col{ grid-template-columns: 1fr; }
 }
+
+/* ===== Letter-style essay section ===== */
+.letter{
+  overflow: hidden;
+}
+
+.letter-topbar{
+  height: 8px;
+  background: linear-gradient(90deg, rgba(47,182,255,0.0), rgba(47,182,255,0.85), rgba(47,182,255,0.0));
+}
+
+.letter-body{
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  max-width: 78ch;
+}
+
+.letter-sender,
+.letter-recipient{
+  margin: 0;
+}
+
+.letter-name{
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.letter-lines{
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.letter-date{
+  margin: 1.6rem 0 1.3rem;
+  font-weight: 600;
+  color: rgba(8,19,26,0.70);
+}
+
+.letter-greeting{
+  margin: 2.2rem 0 1rem;
+  font-weight: 600;
+}
+
+.letter-content p{
+  margin: 0 0 1rem;
+  color: rgba(8,19,26,0.78);
+  line-height: 1.85;
+}
+
+.letter-closing{
+  margin: 1.6rem 0 0.6rem;
+  font-weight: 600;
+}
+
+.letter-signature{
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
