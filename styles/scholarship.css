@@ -170,8 +170,8 @@ a{ color: inherit; text-decoration:none; }
   inset:0;
   background-image:
     linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.78)),
-    url("/images/boat.jpeg"),
     url("/images/nash.JPG"),
+    url("/images/boat.jpeg"),
     url("/images/fishing.jpeg");
   background-position:
     center,
