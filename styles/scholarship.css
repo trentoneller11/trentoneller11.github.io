@@ -169,15 +169,16 @@ a{ color: inherit; text-decoration:none; }
   position:absolute;
   inset:0;
 
-  /* IMPORTANT: relative paths (CSS is in styles/) */
-  background-image:
-    url("../images/nash.JPG");
+  /* ✅ correct path (CSS is in /styles/) */
+  background-image: url("../images/nash.JPG");
+
   background-size: cover;
-  background-position: center;
+  background-position: center top;   /* try center, center top, or 50% 30% */
   background-repeat: no-repeat;
 
-  filter: saturate(1.05) contrast(1.05);
-  transform: scale(1.03);
+  /* ✅ remove forced zoom/crop */
+  transform: none;
+  filter: none;
 }
 
 .hero-overlay{
