@@ -3,7 +3,9 @@
    Replace your scholarship.css with THIS entire file.
    ========================================================= */
 
-/* ---------- Theme ---------- */
+/* =========================================================
+   THEME / TOKENS
+   ========================================================= */
 :root{
   --bg: #f6fbff;
   --bg-2: #eef6ff;
@@ -26,6 +28,9 @@
   --ease: cubic-bezier(.2,.8,.2,1);
 }
 
+/* =========================================================
+   BASE / GLOBAL
+   ========================================================= */
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
 
@@ -74,7 +79,9 @@ a{ color: inherit; text-decoration:none; }
   border-radius: 12px;
 }
 
-/* ---------- Header ---------- */
+/* =========================================================
+   HEADER / NAV
+   ========================================================= */
 .site-header{
   position: sticky;
   top: 0;
@@ -153,7 +160,9 @@ a{ color: inherit; text-decoration:none; }
   border-radius: 2px;
 }
 
-/* ---------- Hero ---------- */
+/* =========================================================
+   HERO
+   ========================================================= */
 .hero{
   position:relative;
   /* shorter hero = less forced cropping/zoom */
@@ -243,7 +252,7 @@ a{ color: inherit; text-decoration:none; }
   justify-content:center;
 }
 
-/* Modern “shop-like” buttons */
+/* Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -278,7 +287,7 @@ a{ color: inherit; text-decoration:none; }
   background: rgba(255,255,255,0.10);
 }
 
-/* Meta cards (more lifeshirt-like: clean tiles) */
+/* Hero meta cards */
 .hero-meta{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -307,7 +316,9 @@ a{ color: inherit; text-decoration:none; }
   color: rgba(255,255,255,0.95);
 }
 
-/* ---------- Sections ---------- */
+/* =========================================================
+   SECTIONS
+   ========================================================= */
 .section{
   padding: clamp(3rem, 6vw, 5rem) 0;
 }
@@ -339,7 +350,9 @@ a{ color: inherit; text-decoration:none; }
   max-width: 60ch;
 }
 
-/* ---------- Cards ---------- */
+/* =========================================================
+   CARDS
+   ========================================================= */
 .card{
   border-radius: var(--radius);
   border: 1px solid var(--line);
@@ -364,7 +377,9 @@ a{ color: inherit; text-decoration:none; }
   line-height: 1.7;
 }
 
-/* Video */
+/* =========================================================
+   VIDEO
+   ========================================================= */
 .video-wrap{
   aspect-ratio: 16 / 9;
   background: rgba(6,18,26,0.08);
@@ -378,7 +393,9 @@ a{ color: inherit; text-decoration:none; }
   border:0;
 }
 
-/* Pills */
+/* =========================================================
+   PILLS
+   ========================================================= */
 .pill-row{
   display:flex;
   flex-wrap:wrap;
@@ -394,7 +411,9 @@ a{ color: inherit; text-decoration:none; }
   color: rgba(8,19,26,0.80);
 }
 
-/* Layout grids */
+/* =========================================================
+   LAYOUT GRIDS
+   ========================================================= */
 .grid-2{
   display:grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -407,7 +426,9 @@ a{ color: inherit; text-decoration:none; }
   gap: 1.2rem;
 }
 
-/* Timeline */
+/* =========================================================
+   TIMELINE
+   ========================================================= */
 .timeline{ display:grid; gap: 1.1rem; margin-top: 0.8rem; }
 .timeline-item{
   padding-top: 1.1rem;
@@ -421,7 +442,9 @@ a{ color: inherit; text-decoration:none; }
   font-size: 0.95rem;
 }
 
-/* Lists */
+/* =========================================================
+   LISTS / LABELS
+   ========================================================= */
 .list{
   margin: 0;
   padding-left: 1.1rem;
@@ -438,7 +461,9 @@ a{ color: inherit; text-decoration:none; }
   color: rgba(8,19,26,0.55);
 }
 
-/* Prose */
+/* =========================================================
+   PROSE
+   ========================================================= */
 .prose .card-body{ max-width: 78ch; }
 .prose h4{
   margin: 1.2rem 0 0.3rem;
@@ -455,7 +480,9 @@ a{ color: inherit; text-decoration:none; }
   border-radius: 12px;
 }
 
-/* Gallery */
+/* =========================================================
+   GALLERY
+   ========================================================= */
 .gallery{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -483,21 +510,24 @@ a{ color: inherit; text-decoration:none; }
   transform: scale(1.06);
 }
 
-/* Footer */
-.site-footer{
-  border-top: 1px solid var(--line);
-  padding: 1.4rem 0;
-  background: rgba(255,255,255,0.65);
+/* Gallery captions */
+.gallery-figure{
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
 }
-.footer-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 1rem;
-}
-.footer-links{ display:flex; gap: 0.9rem; }
 
-/* Resume panels */
+.gallery-caption{
+  text-align: center;
+  font-size: 0.95rem;
+  color: rgba(8,19,26,0.68);
+  line-height: 1.35;
+  padding: 0 0.25rem;
+}
+
+/* =========================================================
+   RESUME
+   ========================================================= */
 #resume .resume-outer{ width: 100%; }
 #resume .resume-panel{
   padding: 1rem;
@@ -506,67 +536,9 @@ a{ color: inherit; text-decoration:none; }
   border: 1px solid var(--line);
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 920px){
-  .hero-meta{ grid-template-columns: 1fr; max-width: 520px; }
-  .grid-2{ grid-template-columns: 1fr; }
-  .gallery{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .section-head{ flex-direction: column; align-items:flex-start; }
-}
-
-@media (max-width: 760px){
-  /* Mobile nav */
-  .nav-toggle-label{ display:flex; }
-
-  .site-nav{
-    position:absolute;
-    right: 1rem;
-    top: calc(100% + 0.7rem);
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.25rem;
-    padding: 0.7rem;
-    width: min(320px, calc(100vw - 2rem));
-    border-radius: 16px;
-    border: 1px solid var(--line);
-    background: rgba(255,255,255,0.92);
-    box-shadow: var(--shadow);
-    opacity: 0;
-    transform: translateY(-8px);
-    pointer-events: none;
-    transition: opacity .2s var(--ease), transform .2s var(--ease);
-  }
-
-  .nav-link{
-    padding: 0.75rem 0.9rem;
-    color: rgba(8,19,26,0.85);
-  }
-
-  .nav-toggle:checked ~ .site-nav{
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  /* Hero sizing on phones */
-  .hero, .hero-content{ min-height: 100svh; }
-  .hero-content{ padding: 1.25rem 0 1.25rem; }
-
-  /* Buttons: stack */
-  .hero-actions{
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .btn{
-    width: min(420px, 92%);
-  }
-
-  .gallery{ grid-template-columns: 1fr; }
-  .two-col{ grid-template-columns: 1fr; }
-}
-
-/* ===== Letter-style essay section ===== */
+/* =========================================================
+   LETTER
+   ========================================================= */
 .letter{
   overflow: hidden;
 }
@@ -624,17 +596,80 @@ a{ color: inherit; text-decoration:none; }
   letter-spacing: -0.01em;
 }
 
-/* Gallery captions */
-.gallery-figure{
-  margin: 0;
-  display: grid;
-  gap: 0.55rem;
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.site-footer{
+  border-top: 1px solid var(--line);
+  padding: 1.4rem 0;
+  background: rgba(255,255,255,0.65);
+}
+.footer-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 1rem;
+}
+.footer-links{ display:flex; gap: 0.9rem; }
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 920px){
+  .hero-meta{ grid-template-columns: 1fr; max-width: 520px; }
+  .grid-2{ grid-template-columns: 1fr; }
+  .gallery{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .section-head{ flex-direction: column; align-items:flex-start; }
 }
 
-.gallery-caption{
-  text-align: center;
-  font-size: 0.95rem;
-  color: rgba(8,19,26,0.68);
-  line-height: 1.35;
-  padding: 0 0.25rem;
+@media (max-width: 760px){
+  /* Mobile nav */
+  .nav-toggle-label{ display:flex; }
+
+  .site-nav{
+    position:absolute;
+    right: 1rem;
+    top: calc(100% + 0.7rem);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    padding: 0.7rem;
+    width: min(320px, calc(100vw - 2rem));
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,0.92);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity .2s var(--ease), transform .2s var(--ease);
+  }
+
+  .nav-link{
+    padding: 0.75rem 0.9rem;
+    color: rgba(8,19,26,0.85);
+  }
+
+  .nav-toggle:checked ~ .site-nav{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Hero sizing on phones */
+  .hero, .hero-content{ min-height: 100svh; }
+  .hero-content{ padding: 1.25rem 0 1.25rem; }
+
+  /* Buttons: stack */
+  .hero-actions{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn{
+    width: min(420px, 92%);
+  }
+
+  .gallery{ grid-template-columns: 1fr; }
+  .two-col{ grid-template-columns: 1fr; }
 }
