@@ -170,11 +170,6 @@ a{ color: inherit; text-decoration:none; }
   inset:0;
   background-image: url("/images/nash.JPG"),
   background-position: center,
-  background-size:
-    cover,
-    33.33% 100%,
-    33.34% 100%,
-    33.33% 100%;
   background-repeat: no-repeat;
 }
 
